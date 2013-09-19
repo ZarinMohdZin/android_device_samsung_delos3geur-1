@@ -15,6 +15,7 @@ TARGET_BOOTLOADER_BOARD_NAME := delos3geur
 
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom loglevel=1 vmalloc=200M
 BOARD_KERNEL_BASE := 0x00200000
+BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01300000
 BOARD_KERNEL_PAGESIZE := 4096
 
 # fix this up by examining /proc/mtd on a running device
